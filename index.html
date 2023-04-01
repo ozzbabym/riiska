@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Riiska</title>
+</head>
+<body>
+    <div class="main-container">
+        <section class="header">
+            <div class="header_logo">
+                <img data-page="main" src="riiska-logo.png" class="js-router header_logo-img" alt=""/>
+            </div>
+            <div class="header_menu">
+                <div class="header_menu-list">
+                    <ul>
+                        <li class="js-router" data-page="catalog">Каталог</li>
+                        <li class="js-router" data-page="delivery">Доставка</li>
+                        <li class="js-router" data-page="cafe">Кафе</li>
+                        <li class="js-router" data-page="about">О нас</li>
+                    </ul>
+                </div>
+                <div class="header_menu-btn js-menu-btn">
+                    <div class="header_menu-btn-line"></div>
+                    <div class="header_menu-btn-line"></div>
+                    <div class="header_menu-btn-line"></div>
+                    <div class="header_menu-btn-list-wrapper">
+                        <div class="header_menu-btn-list">
+                            <ul>
+                                <li class="js-router" data-page="catalog">Каталог</li>
+                                <li class="js-router" data-page="delivery">Доставка</li>
+                                <li class="js-router" data-page="cafe">Кафе</li>
+                                <li class="js-router" data-page="about">О нас</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="pages">
+            <section class="page page--show page-main js-router-page" data-page="main">
+                <div class="page-main__carusel-wrapper">
+                    <div class="page-main__carusel">
+                        <img class="js-slide-img page-main__carusel-img page-main__carusel-img--show" src="https://azbyka.ru/wp-content/uploads/2016/07/priroda.jpg" alt="">
+                        <img class="js-slide-img page-main__carusel-img" src="https://upload.wikimedia.org/wikipedia/commons/8/80/140-P1020281_-_Flickr_-_Laurie_Nature_Bee.jpg" alt="">
+                        <img class="js-slide-img page-main__carusel-img" src="http://where.ru/upload/iblock/ad4/ad4ef7e48f611b6be29e51e9aefaecd1.jpg" alt="">
+                    </div>
+                </div>
+            </section>
+            <section class="page page-catalog js-router-page" data-page="catalog">Каталог</section>
+            <section class="page page-delivery js-router-page" data-page="delivery">Доставка</section>
+            <section class="page page-cafe js-router-page" data-page="cafe">Кафе</section>
+            <section class="page page-about js-router-page" data-page="about">О нас</section>
+        </section>
+    </div>
+    <script src="jquery.js"></script>
+    <script src="index.js"></script>
+</body>
+</html>

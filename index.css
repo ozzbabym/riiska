@@ -1,0 +1,155 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    background: #000;
+    color: #fff;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header_logo {
+    width: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header_menu-btn-list ul {
+    list-style: none;
+}
+
+.header_menu-btn-list {
+    visibility: hidden;
+}
+
+.header_menu-btn-list-wrapper.header_menu-btn-list-wrapper--show  .header_menu-btn-list {
+    position: absolute;
+    visibility: visible;
+    top: 0px;
+    width: 150px;
+    background: #000;
+    right: 0;
+    transition: all 3s;
+    border-radius: 0 0 9px 9px;
+}
+
+.header_menu-btn-list-wrapper {
+    display: none;
+    position: relative;
+    height: 200px;
+    z-index: 1;
+}
+
+.header_menu-btn-list-wrapper--show {
+    display: block;
+}
+
+.header_menu-list {
+    display: none;
+    margin-right: 32px;
+}
+
+.header_menu-list ul {
+    display: flex;
+    text-decoration: none;
+    list-style: none;
+}
+
+.header_menu-list ul li {
+    margin: 0 8px;
+    padding: 4px 8px;
+    border-radius: 9px;
+    transition: all .3s;
+}
+.header_menu-list ul li:hover {
+    background: #fff;
+    color: #000;
+}
+
+.header_logo img {
+    width: 50px;
+    height: 50px;
+}
+
+.header_menu-btn {
+    display: none;
+    transition: .3s;
+    height: 32px;
+    width: 30px;
+    box-sizing: border-box;
+}
+
+.header_menu-btn-line {
+    height: 2px;
+    width: 30px;
+    background: #fff;
+    margin: 6px 0;
+    transition: all .3s;
+}
+
+.header_menu-btn:hover .header_menu-btn-line {
+    margin: 10px 0;
+}
+
+.header_menu-btn {
+    position: relative;
+    margin-right: 16px;
+}
+
+.page {
+    display: none;
+}
+
+.page--show {
+    display: block;
+}
+
+.page-main__carusel-wrapper {
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.page-main__carusel-img--prev {
+    transform: translateY(-100%);
+}
+
+.page-main__carusel-img--next {
+    transform: translateY(-100%);
+}
+
+.page-main__carusel-img {
+    max-width: 500px;
+    max-height: 400px;
+    display: none;
+    transition: all 1s;
+    position: absolute;
+}
+
+.page-main__carusel-img--show {
+    display: block;
+}
+
+.page-main__carusel {
+    width: 500px;
+    display: flex;
+    position: relative;
+    height: 400px;
+}
+
+@media screen and (max-width: 600px) {
+    .header_menu-btn {
+        display: block;
+    }
+}
+
+@media screen and (min-width: 601px) {
+    .header_menu-list {
+        display: block;
+    }
+}
