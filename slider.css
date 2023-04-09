@@ -12,9 +12,9 @@
   transform-style: preserve-3d;
   animation: rotation 20s infinite linear;
 }
-#carousel:hover{
+/* #carousel:hover{
   animation-play-state: paused;
-}
+} */
 #carousel figure{
   display: block;
   position: absolute;
