@@ -17,7 +17,7 @@ window.addEventListener('DOMContentLoaded', function() {
             list.removeClass('header_menu-btn-list-wrapper--show');
     });
 
-    //product-list
+    //product-list 
     var products = [
         {
             id: 1,

@@ -140,7 +140,7 @@ body {
     background: #fff;
     margin: 4px 0;
     transition: all .3s;
-}
+} 
 
 .header_menu-btn:hover .header_menu-btn-line {
     margin: 6px 0;
