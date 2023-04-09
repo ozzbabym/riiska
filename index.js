@@ -17,22 +17,6 @@ window.addEventListener('DOMContentLoaded', function() {
             list.removeClass('header_menu-btn-list-wrapper--show');
     });
 
-    var imgsSlideList = $('.js-slide-img');
-    var count = 0;
-    function animateSliderImages(count) {
-        imgsSlideList.removeClass('page-main__carusel-img--show')
-        imgsSlideList[count].classList.add('page-main__carusel-img--show');
-        setTimeout(function() {
-            count++;
-            if (count == imgsSlideList.length) {
-                count = 0;
-            }
-            imgsSlideList[count - 1] && imgsSlideList[count - 1].classList.remove('page-main__carusel-img--show');
-            animateSliderImages(count);
-        }, 2000);
-    }
-    animateSliderImages(count);
-
     //product-list
     var products = [
         {
