@@ -265,6 +265,10 @@ body {
         position: static;
     }
 
+    .main-container {
+        padding: 0;
+    }
+
     .header_logo {
         position: static;
     }
