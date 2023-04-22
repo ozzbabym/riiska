@@ -318,6 +318,11 @@ body {
     padding: 4px 16px;
 }
 
+.page-pizza-riiska__location-title {
+    display: flex;
+    justify-content: center;
+}
+
 .page-main__gallery__location-title-wrap,
 .page-pizza-riiska__location-title-wrap,
 .page-delivery__location-title-wrap,
