@@ -81,6 +81,7 @@ body {
     right: 0;
     transition: all 3s;
     border-radius: 0 0 9px 9px;
+    box-shadow: 6px 19px 23px 1px rgb(121, 121, 121);
 }
 
 .header_menu-btn-list-wrapper {
@@ -98,6 +99,7 @@ body {
     display: none;
     background: #666161;
     border-radius: 35px;
+    box-shadow: 3px 3px 13px 3px rgb(121, 121, 121);
 }
 
 .header_menu-list ul {
@@ -237,6 +239,7 @@ body {
     width: 400px;
     height: 320px;
     overflow: hidden;
+    box-shadow: 3px 3px 13px 3px rgb(121, 121, 121);
 }
 
 .page-main__gallery-text-wrapper p {
@@ -253,6 +256,7 @@ body {
     background: #FDF4DD;
     font-size: 32px;
     border-radius: 32px;
+    box-shadow: 3px 3px 13px 3px rgb(121, 121, 121);
 }
 
 .page-main__location-title-wrap {
@@ -271,6 +275,7 @@ body {
     margin-top: 32px;
     border-radius: 21px;
     background: #FDF4DD;
+    box-shadow: 3px 3px 13px 3px rgb(121, 121, 121);
 }
 /* mobile */
 
@@ -299,10 +304,15 @@ body {
         min-height: 1000px;
     }
     .header {
+        position: sticky;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 1;
         height: 60px;
         background: #666161;
         justify-content: space-between;
-        position: static;
+        box-shadow: 3px 3px 13px 3px rgb(121, 121, 121);
     }
 
     .main-container {
@@ -347,6 +357,7 @@ body {
     .main-container {
         margin-top: 32px;
         min-width: 880px;
+        box-shadow: 3px 3px 13px 3px rgb(121, 121, 121);
     }
 
     .header_menu-list {
