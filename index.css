@@ -67,6 +67,7 @@ body {
 .header_menu-btn-list ul li {
     margin: 24px 0;
     font-size: 26px;
+    display: flex;
 }
 
 .header_menu-btn-list {
@@ -83,7 +84,7 @@ body {
     position: absolute;
     visibility: visible;
     top: 0px;
-    width: 200px;
+    width: 250px;
     background: #666161;
     right: 0;
     transition: all 3s;
@@ -109,6 +110,26 @@ body {
     box-shadow: 3px 3px 13px 3px rgb(121, 121, 121);
 }
 
+.header_menu-list-pizza-riiska-figure {
+    display: flex;
+    align-items: center;
+    margin-right: 6px;
+}
+
+.header_menu-list-pizza-riiska-figure-item {
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+}
+
+.header_menu-list-pizza-riiska-figure-item--orange {
+    background: orange;
+}
+
+.header_menu-list-pizza-riiska-figure-item--green {
+    background: green;
+}
+
 .header_menu-list ul {
     display: flex;
     text-decoration: none;
@@ -122,6 +143,7 @@ body {
     padding: 4px 8px;
     border-radius: 9px;
     transition: all .5s;
+    display: flex;
 }
 .header_menu-list ul li:hover {
     background: #FDF4DD;
