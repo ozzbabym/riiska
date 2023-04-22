@@ -78,6 +78,8 @@ body {
     text-align: center;
     font-size: 24px;
     margin-bottom: 8px;
+    display: flex;
+    justify-content: center;
 }
 
 .header_menu-btn-list-wrapper.header_menu-btn-list-wrapper--show  .header_menu-btn-list {
