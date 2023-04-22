@@ -66,6 +66,7 @@ body {
 
 .header_menu-btn-list ul li {
     margin: 24px 0;
+    font-size: 26px;
 }
 
 .header_menu-btn-list {
@@ -82,7 +83,7 @@ body {
     position: absolute;
     visibility: visible;
     top: 0px;
-    width: 150px;
+    width: 200px;
     background: #666161;
     right: 0;
     transition: all 3s;
