@@ -222,6 +222,7 @@ body {
     opacity: 0.7;
 }
 
+.page-delivery__location-description,
 .page-main__location-description,
 .page-main__gallery {
     display: flex;
@@ -229,6 +230,8 @@ body {
     gap: 16px;
 }
 
+.page-delivery__location-description-text,
+.page-delivery__location-description-map,
 .page-main__location-description-text,
 .page-main__location-description-map,
 .page-main__gallery-carousel,
@@ -242,6 +245,7 @@ body {
     box-shadow: 3px 3px 13px 3px rgb(121, 121, 121);
 }
 
+.page-delivery__location-description-text,
 .page-main__location-description-text,
 .page-main__gallery-text-wrapper {
     display: flex;
@@ -254,6 +258,7 @@ body {
 .page-main__gallery-text-wrapper p {
     margin-left: 8px;
 }
+.page-delivery__location,
 .page-main__location {
     margin-top: 32px;
     width: 100%;
@@ -353,6 +358,7 @@ body {
         width: auto;
     }
 
+    .page-delivery__location-description,
     .page-main__location-description {
         flex-wrap: wrap;
     }
