@@ -242,6 +242,15 @@ body {
     box-shadow: 3px 3px 13px 3px rgb(121, 121, 121);
 }
 
+.page-main__location-description-text,
+.page-main__gallery-text-wrapper {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+    padding: 16px;
+}
+
 .page-main__gallery-text-wrapper p {
     margin-left: 8px;
 }
