@@ -8,6 +8,7 @@ window.addEventListener('DOMContentLoaded', function() {
                 el.classList.add('page--show');
             }
         });
+        window.scrollTo({top: 0, behavior: 'smooth'});
     });
     $('.js-menu-btn').on('click', function(ev) {
         var list = $(ev.currentTarget).find('.header_menu-btn-list-wrapper');
