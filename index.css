@@ -268,18 +268,20 @@ body {
 .page-main__gallery-text-wrapper p {
     margin-left: 8px;
 }
+.page-main__gallery,
 .page-pizza-riiska__location,
 .page-delivery__location,
 .page-main__location {
     margin-top: 32px;
     width: 100%;
 }
+.page-main__gallery__location-title,
 .page-pizza-riiska__location-title,
 .page-delivery__location-title,
 .page-main__location-title {
     width: 500px;
     text-align: center;
-    height: 44px;
+    min-height: 44px;
     background: #FDF4DD;
     font-size: 32px;
     border-radius: 32px;
@@ -287,6 +289,7 @@ body {
     padding: 4px 16px;
 }
 
+.page-main__gallery__location-title-wrap,
 .page-pizza-riiska__location-title-wrap,
 .page-delivery__location-title-wrap,
 .page-main__location-title-wrap {
