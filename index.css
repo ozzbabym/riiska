@@ -222,6 +222,7 @@ body {
     opacity: 0.7;
 }
 
+.page-pizza-riiska__location-description,
 .page-delivery__location-description,
 .page-main__location-description,
 .page-main__gallery {
@@ -230,6 +231,10 @@ body {
     gap: 16px;
 }
 
+.page-pizza-riiska__location-description-image,
+.page-pizza-riiska__location-description-text,
+.page-pizza-riiska__location-description-text,
+.page-pizza-riiska__location-description-map,
 .page-delivery__location-description-text,
 .page-delivery__location-description-map,
 .page-main__location-description-text,
@@ -245,6 +250,11 @@ body {
     box-shadow: 3px 3px 13px 3px rgb(121, 121, 121);
 }
 
+.page-pizza-riiska__location-description-img {
+    height: 320px;
+}
+
+.page-pizza-riiska__location-description-text,
 .page-delivery__location-description-text,
 .page-main__location-description-text,
 .page-main__gallery-text-wrapper {
@@ -258,11 +268,14 @@ body {
 .page-main__gallery-text-wrapper p {
     margin-left: 8px;
 }
+.page-pizza-riiska__location,
 .page-delivery__location,
 .page-main__location {
     margin-top: 32px;
     width: 100%;
 }
+.page-pizza-riiska__location-title,
+.page-delivery__location-title,
 .page-main__location-title {
     width: 500px;
     text-align: center;
@@ -271,8 +284,11 @@ body {
     font-size: 32px;
     border-radius: 32px;
     box-shadow: 3px 3px 13px 3px rgb(121, 121, 121);
+    padding: 4px 16px;
 }
 
+.page-pizza-riiska__location-title-wrap,
+.page-delivery__location-title-wrap,
 .page-main__location-title-wrap {
     width: 100%;
     display: flex;
@@ -290,6 +306,11 @@ body {
     border-radius: 21px;
     background: #FDF4DD;
     box-shadow: 3px 3px 13px 3px rgb(121, 121, 121);
+}
+
+.page-pizza-riiska__location-description,
+.page-delivery__location-description {
+    margin-top: 32px;
 }
 /* mobile */
 
@@ -358,6 +379,11 @@ body {
         width: auto;
     }
 
+    .page-pizza-riiska__location-description:nth-child(2) {
+        flex-wrap: wrap-reverse;
+    }
+
+    .page-pizza-riiska__location-description:nth-child(1),
     .page-delivery__location-description,
     .page-main__location-description {
         flex-wrap: wrap;
