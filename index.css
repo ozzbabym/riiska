@@ -3,7 +3,7 @@ body {
     padding: 0;
     min-height: 100%;
     background: #e6dbc6;
-    font-family: "Gill Sans", sans-serif;
+    font-family: 'Marck Script', cursive;
 }
 
 .main-container {
@@ -65,7 +65,6 @@ body {
 
 .header_menu-btn-list ul li {
     margin: 24px 0;
-    font-family: 'Courier New', Courier, monospace;
 }
 
 .header_menu-btn-list {
@@ -296,6 +295,10 @@ body {
     width: 100%;
     display: flex;
     justify-content: center;
+}
+
+.page-pizza-riiska__location-title-pizza {
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .page-main__location-description {
