@@ -71,6 +71,12 @@ body {
     visibility: hidden;
 }
 
+.location-description-text-title {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 8px;
+}
+
 .header_menu-btn-list-wrapper.header_menu-btn-list-wrapper--show  .header_menu-btn-list {
     position: absolute;
     visibility: visible;
