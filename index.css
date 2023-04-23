@@ -76,9 +76,8 @@ body {
 
 .location-description-text-title {
     text-align: center;
-    font-size: 24px;
+    font-size: 28px;
     margin-bottom: 8px;
-    
     display: flex;
     justify-content: center;
 }
@@ -279,6 +278,7 @@ body {
     width: 400px;
     height: 320px;
     overflow: hidden;
+    overflow-y: scroll;
     box-shadow: 3px 3px 13px 3px rgb(121, 121, 121);
 }
 
@@ -290,11 +290,8 @@ body {
 .page-delivery__location-description-text,
 .page-main__location-description-text,
 .page-main__gallery-text-wrapper {
-    display: flex;
-    justify-content: center;
-    align-content: center;
-    flex-direction: column;
     padding: 16px;
+    font-size: 20px;
 }
 
 .page-main__gallery-text-wrapper p {
