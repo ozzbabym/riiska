@@ -380,6 +380,7 @@ body {
     overflow: hidden;
     max-height: 500px;
     border-radius: 9px;
+    box-shadow: 3px 3px 13px 3px rgb(121, 121, 121);
 }
 
 .page-pizza-riiska__card-title {
