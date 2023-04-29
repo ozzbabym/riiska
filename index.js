@@ -18,5 +18,50 @@ window.addEventListener('DOMContentLoaded', function() {
             list.addClass('header_menu-btn-list-wrapper--show') :
             list.removeClass('header_menu-btn-list-wrapper--show');
     });
+
+    var productList = [
+        {
+            id: 1,
+            title: 'Маргарита',
+            imgName: 'margarita.webp',
+            description: 'Тесто дрожжевое, томатный соус, моцарелла, орегано'
+        },
+        {
+            id: 2,
+            title: 'Пепперони',
+            imgName: 'pepperoni.jpg',
+            description: 'Тесто дрожжевое, томатный соус, моцарелла, колбаски пепперони, орегано'
+        },
+        {
+            id: 3,
+            title: 'Фунги',
+            imgName: 'fungi.jpg',
+            description: 'Тесто дрожжевое, томатный соус, моцарелла, бекон, шампиньоны, черный перец, трюфельное масло, орегано'
+        },
+        {
+            id: 4,
+            title: '3 Сыра',
+            imgName: 'cheesethree.jpg',
+            description: 'Тесто дрожжевое, томатный соус, моцарелла, фиор ди латте, гарганзоло, орегано'
+        },
+        {
+            id: 5,
+            title: 'Гавайская',
+            imgName: 'hawaii.png',
+            description: 'Тесто дрожжевое, томатный соус, моцарелла, бекон, куриное филе, ананас, орегано'
+        },
+    ]
+    productList = productList.map((item) => {
+        return `<div class="page-pizza-riiska__card">
+                    <div class="page-pizza-riiska__card-title">${item.title}</div>
+                    <div class="page-pizza-riiska__card-img-wrap">
+                        <img class="page-pizza-riiska__card-img" src="${item.imgName}" alt="">
+                    </div>
+                    <div class="page-pizza-riiska__card-description">
+                        ${item.description} 
+                    </div>
+                </div>`
+    });
+    $('.js-product-list').html(productList);
 });
 

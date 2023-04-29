@@ -80,6 +80,7 @@ body {
     margin-bottom: 8px;
     display: flex;
     justify-content: center;
+    text-shadow: #000 0px 2px 1px;
 }
 
 .header_menu-btn-list-wrapper.header_menu-btn-list-wrapper--show  .header_menu-btn-list {
@@ -316,6 +317,7 @@ body {
     border-radius: 32px;
     box-shadow: 3px 3px 13px 3px rgb(121, 121, 121);
     padding: 4px 16px;
+    text-shadow: #000 0px 2px 1px;
 }
 
 .page-pizza-riiska__location-title {
@@ -332,8 +334,16 @@ body {
     justify-content: center;
 }
 
+.page-pizza-riiska__location-title-wrap--mrt {
+    margin-top: 32px;
+}
+
 .page-pizza-riiska__location-title-pizza {
     font-family: Arial, Helvetica, sans-serif;
+}
+
+.page-pizza-riiska__location-title-pizza--text-new {
+    font-family: 'Marck Script', cursive;
 }
 
 .page-main__location-description {
@@ -352,6 +362,51 @@ body {
 .page-pizza-riiska__location-description,
 .page-delivery__location-description {
     margin-top: 32px;
+}
+
+.footer-contacts {
+    text-align: left;
+    margin: 16px;
+}
+
+.footer-contacts__list-contact {
+    font-family: cursive;
+}
+
+.page-pizza-riiska__card {
+    padding: 8px;
+    background: #FDF4DD;
+    width: 200px;
+    overflow: hidden;
+    max-height: 500px;
+    border-radius: 9px;
+}
+
+.page-pizza-riiska__card-title {
+    text-align: center;
+    margin: 8px 0;
+}
+
+.page-pizza-riiska__card-img {
+    width: 170px;
+    border-radius: 9px;
+}
+
+.page-pizza-riiska__card-description {
+    margin: 8px 0;
+}
+
+.page-pizza-riiska__card-img-wrap {
+    display: flex;
+    justify-content: center;
+}
+
+.page-pizza-riiska__card-list {
+    margin-top: 32px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    justify-content: center;
 }
 /* mobile */
 
@@ -375,6 +430,12 @@ body {
         min-width: 320px;
         border-radius: 0;
         border: none;
+    }
+    .page-pizza-riiska__card {
+        width: 300px;
+    }
+    .footer-contacts {
+        text-align: center;
     }
     .page {
         min-height: 1000px;
