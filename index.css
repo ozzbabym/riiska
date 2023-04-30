@@ -143,7 +143,7 @@ body {
 }
 
 .header_menu-list ul li {
-    margin: 0 32px;
+    margin: 0 16px;
     padding: 4px 8px;
     border-radius: 9px;
     transition: all .5s;
@@ -255,15 +255,19 @@ body {
     opacity: 0.7;
 }
 
+.page-history__container-description,
 .page-pizza-riiska__location-description,
 .page-delivery__location-description,
 .page-main__location-description,
 .page-main__gallery {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     gap: 16px;
+    max-width: 1000px;
 }
 
+.page-history__container-description-second,
+.page-history__container-description-first,
 .page-pizza-riiska__location-description-image,
 .page-pizza-riiska__location-description-text,
 .page-pizza-riiska__location-description-text,
@@ -276,12 +280,35 @@ body {
 .page-main__gallery-text-wrapper {
     background: #FDF4DD;
     border-radius: 21px;
-    min-width: 400px;
-    width: 400px;
+    min-width: 360px;
+    width:  360px;
     height: 320px;
     overflow: hidden;
     overflow-y: scroll;
     box-shadow: 3px 3px 13px 3px rgb(121, 121, 121);
+}
+
+.page-history__container-description-second,
+.page-history__container-description-first {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 8px;
+}
+.page-history__container-description-photo {
+    height: 260px;
+    border-radius: 9px;
+}
+
+.page-history__container-description-underphoto-text {
+    margin: 8px 32px 8px 32px;
+}
+
+.page-history__container-description-first--full-width {
+    width: 100%;
+    min-width: 750px;
+    height: 100px;
 }
 
 .page-pizza-riiska__location-description-img {
@@ -299,6 +326,8 @@ body {
 .page-main__gallery-text-wrapper p {
     margin-left: 8px;
 }
+
+.page-history__container,
 .page-main__gallery,
 .page-pizza-riiska__location,
 .page-delivery__location,
@@ -306,6 +335,8 @@ body {
     margin-top: 32px;
     width: 100%;
 }
+
+.page-history__container-title,
 .page-main__gallery__location-title,
 .page-pizza-riiska__location-title,
 .page-delivery__location-title,
@@ -326,6 +357,11 @@ body {
     justify-content: center;
 }
 
+.page-history__container-description-second--first-title {
+    margin-top: 16px;
+}
+
+.page-history__container-title-wrap,
 .page-main__gallery__location-title-wrap,
 .page-pizza-riiska__location-title-wrap,
 .page-delivery__location-title-wrap,
@@ -360,6 +396,7 @@ body {
     box-shadow: 3px 3px 13px 3px rgb(121, 121, 121);
 }
 
+.page-history__container-description,
 .page-pizza-riiska__location-description,
 .page-delivery__location-description {
     margin-top: 32px;
@@ -485,18 +522,24 @@ body {
 
     .page-pizza-riiska__location-description:nth-child(2) {
         flex-wrap: wrap-reverse;
+        justify-content: center;
     }
 
+    .page-history__container-description,
     .page-pizza-riiska__location-description:nth-child(1),
     .page-delivery__location-description,
     .page-main__location-description {
+        justify-content: center;
         flex-wrap: wrap;
     }
 
     .page-main__gallery {
+        justify-content: center;
         flex-wrap: wrap-reverse;
     }
 
+    .page-history__container-description-second,
+    .page-history__container-description-first,
     .page-pizza-riiska__location-description-image,
     .page-pizza-riiska__location-description-text,
     .page-pizza-riiska__location-description-text,
@@ -511,6 +554,10 @@ body {
         min-width: 300px;
         box-sizing: border-box;
     }
+    
+    .page-history__container-description-first--full-width {
+        height: 250px;
+    }
 
     .page-main__gallery-carousel {
         height: 233px;
@@ -519,7 +566,7 @@ body {
     .carousel__snapper-img {
         width: 350px;
     }
-
+    .page-delivery__location-description-map iframe,
     .page-main__location-description-map iframe {
         width: 340px;
     }
