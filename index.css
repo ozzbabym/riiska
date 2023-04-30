@@ -357,9 +357,12 @@ body {
     display: flex;
     justify-content: center;
 }
+.page-history {
+    font-size: 18px;
+}
 
-.page-history__container-description-second--first-title {
-    margin-top: 60px;
+.page-history__container-description-second--flex-start {
+    justify-content: flex-start;
 }
 
 .page-history__container-description-main-text {
