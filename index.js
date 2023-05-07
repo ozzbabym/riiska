@@ -1,4 +1,12 @@
 window.addEventListener('DOMContentLoaded', function() {
+    var listMenu = $('.header_menu-btn-list-wrapper');
+    document.addEventListener( 'click', (ev) => {
+        ev.stopPropagation();
+        var isListMenu = listMenu.hasClass('header_menu-btn-list-wrapper--show');
+        if (isListMenu) {
+            listMenu.removeClass('header_menu-btn-list-wrapper--show');
+        }
+    });
     $('.js-router').on('click', function(ev) {
         var page = ev.currentTarget.getAttribute('data-page');
         var pages = $('.page');
@@ -12,6 +20,7 @@ window.addEventListener('DOMContentLoaded', function() {
     });
 
     $('.js-menu-btn').on('click', function(ev) {
+        ev.stopPropagation();
         var list = $(ev.currentTarget).find('.header_menu-btn-list-wrapper');
         var show = list.hasClass('header_menu-btn-list-wrapper--show')
         !show ?
