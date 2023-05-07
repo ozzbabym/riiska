@@ -85,6 +85,10 @@ body {
     box-shadow: 6px 19px 23px 1px rgb(121, 121, 121);
 }
 
+.page-main__gallery-text-wrapper a {
+    color: #F5BB02;
+}
+
 .location-description-text-title {
     text-align: center;
     font-size: 28px;
@@ -132,11 +136,11 @@ body {
 }
 
 .header_menu-list-pizza-riiska-figure-item--orange {
-    background: orange;
+    background: #F5BB02;
 }
 
 .header_menu-list-pizza-riiska-figure-item--green {
-    background: green;
+    background: #3FC703;
 }
 
 .header_menu-list ul {
