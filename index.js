@@ -31,34 +31,54 @@ window.addEventListener('DOMContentLoaded', function() {
     var productList = [
         {
             id: 1,
-            title: 'Маргарита',
-            imgName: 'margarita.webp',
-            description: 'Тесто дрожжевое, томатный соус, моцарелла, орегано'
+            title: 'Мясная',
+            imgName: 'meat-pizza.JPG',
+            weight: 510,
+            price: 650,
+            description: 'Тесто дрожжевое, томатный соус, моцарелла, колбаски пепперони, куриное филе, бекон, молотый перец, красный лук, орегано',
         },
         {
             id: 2,
             title: 'Пепперони',
-            imgName: 'pepperoni.jpg',
+            imgName: 'pepperoni-pizza.JPG',
+            weight: 450,
+            price: 500,
             description: 'Тесто дрожжевое, томатный соус, моцарелла, колбаски пепперони, орегано'
         },
         {
             id: 3,
-            title: 'Фунги',
-            imgName: 'fungi.jpg',
-            description: 'Тесто дрожжевое, томатный соус, моцарелла, бекон, шампиньоны, черный перец, трюфельное масло, орегано'
+            title: 'Гавайская',
+            imgName: 'hawaii-pizza.JPG',
+            weight: 410,
+            price: 700,
+            description: 'Тесто дрожжевое, томатный соус, моцарелла, бекон, куриное филе, ананасы, орегано'
         },
         {
             id: 4,
             title: '3 Сыра',
             imgName: 'cheesethree.jpg',
+            weight: 410,
+            price: 600,
             description: 'Тесто дрожжевое, томатный соус, моцарелла, фиор ди латте, гарганзоло, орегано'
         },
         {
             id: 5,
-            title: 'Гавайская',
-            imgName: 'hawaii.png',
-            description: 'Тесто дрожжевое, томатный соус, моцарелла, бекон, куриное филе, ананас, орегано'
+            title: 'Фунги',
+            imgName: 'fungi-pizza.jpg',
+            weight: 455,
+            price: 600,
+            description: 'Тесто дрожжевое, томатный соус, моцарелла, бекон, шампиньоны, черный перец, трюфельное масло, орегано'
+
         },
+        {
+            id: 6,
+            title: 'Горгонзола груша',
+            imgName: 'pear-pizza.jpg',
+            weight: 455,
+            price: 700,
+            description: 'Тесто дрожжевое, томатный соус, моцарелла, ломтики грушы, горгонзола, мёд'
+
+        }
     ]
     productList = productList.map((item) => {
         return `<div class="page-pizza-riiska__card">
@@ -69,8 +89,26 @@ window.addEventListener('DOMContentLoaded', function() {
                     <div class="page-pizza-riiska__card-description">
                         ${item.description} 
                     </div>
+                    <div class="page-pizza-riiska__card-description-info">
+                        <div>
+                            <strong>${item.weight} гр.</strong>
+                        </div>
+                        <div>
+                            </strong><strong>${item.price} руб.</strong>
+                        </div>
+                    </div>
                 </div>`
     });
     $('.js-product-list').html(productList);
+    $('.carousel').flexslider({
+        animation: "slide",
+        slideshowSpeed: 2000,
+        animationSpeed: 1000,
+        controlNav: false,
+        directionNav: false,
+        pauseOnAction: false,
+        pauseOnHover: false,
+        rtl: true
+      });
 });
 
