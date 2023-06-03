@@ -350,7 +350,8 @@ body {
 }
 
 .page-pizza-riiska__location-description-img {
-    height: 320px;
+    width: 360px;
+    margin-top: -12px;
     position: relative;
 }
 

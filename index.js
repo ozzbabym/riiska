@@ -64,7 +64,7 @@ window.addEventListener('DOMContentLoaded', function() {
         {
             id: 5,
             title: 'Фунги',
-            imgName: 'fungi-pizza.jpg',
+            imgName: 'fungi-pizza.JPG',
             weight: 455,
             price: 600,
             description: 'Тесто дрожжевое, томатный соус, моцарелла, бекон, шампиньоны, черный перец, трюфельное масло, орегано'
@@ -73,7 +73,7 @@ window.addEventListener('DOMContentLoaded', function() {
         {
             id: 6,
             title: 'Горгонзола груша',
-            imgName: 'pear-pizza.jpg',
+            imgName: 'pear-pizza.JPG',
             weight: 455,
             price: 700,
             description: 'Тесто дрожжевое, томатный соус, моцарелла, ломтики грушы, горгонзола, мёд'
