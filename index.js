@@ -82,7 +82,7 @@ window.addEventListener('DOMContentLoaded', function() {
     ]
     productList = productList.map((item) => {
         return `<div class="page-pizza-riiska__card">
-                    <div class="page-pizza-riiska__card-title">${item.title}</div>
+                    <div class="page-pizza-riiska__card-title"><strong>${item.title}</strong></div>
                     <div class="page-pizza-riiska__card-img-wrap">
                         <img class="page-pizza-riiska__card-img" src="${item.imgName}" alt="">
                     </div>
@@ -91,10 +91,7 @@ window.addEventListener('DOMContentLoaded', function() {
                     </div>
                     <div class="page-pizza-riiska__card-description-info">
                         <div>
-                            <strong>${item.weight} гр.</strong>
-                        </div>
-                        <div>
-                            </strong><strong>${item.price} руб.</strong>
+                            <strong>${item.weight} гр.</strong> / </strong><strong>${item.price} руб.</strong>
                         </div>
                     </div>
                 </div>`
