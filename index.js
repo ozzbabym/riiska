@@ -59,7 +59,7 @@ window.addEventListener('DOMContentLoaded', function() {
             imgName: 'cheesethree.jpg',
             weight: 410,
             price: 600,
-            description: 'Тесто дрожжевое, томатный соус, моцарелла, фиор ди латте, гарганзоло, орегано'
+            description: 'Тесто дрожжевое, томатный соус, моцарелла, фиор ди латте, гарганзола, орегано'
         },
         {
             id: 5,
@@ -76,7 +76,7 @@ window.addEventListener('DOMContentLoaded', function() {
             imgName: 'pear-pizza.JPG',
             weight: 455,
             price: 700,
-            description: 'Тесто дрожжевое, томатный соус, моцарелла, ломтики грушы, горгонзола, мёд'
+            description: 'Тесто дрожжевое, томатный соус, моцарелла, ломтики груши, горгонзола, мёд'
 
         }
     ]
