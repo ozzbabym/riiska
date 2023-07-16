@@ -59,12 +59,12 @@ window.addEventListener('DOMContentLoaded', function() {
             imgName: 'cheesethree.jpg',
             weight: 410,
             price: 600,
-            description: 'Тесто дрожжевое, томатный соус, моцарелла, фиор ди латте, гарганзоло, орегано'
+            description: 'Тесто дрожжевое, томатный соус, моцарелла, фиор ди латте, горгондзола, орегано'
         },
         {
             id: 5,
             title: 'Фунги',
-            imgName: 'fungi-pizza.jpg',
+            imgName: 'fungi-pizza.JPG',
             weight: 455,
             price: 600,
             description: 'Тесто дрожжевое, томатный соус, моцарелла, бекон, шампиньоны, черный перец, трюфельное масло, орегано'
@@ -72,17 +72,17 @@ window.addEventListener('DOMContentLoaded', function() {
         },
         {
             id: 6,
-            title: 'Горгонзола груша',
-            imgName: 'pear-pizza.jpg',
+            title: 'Горгондзола груша',
+            imgName: 'pear-pizza.JPG',
             weight: 455,
             price: 700,
-            description: 'Тесто дрожжевое, томатный соус, моцарелла, ломтики грушы, горгонзола, мёд'
+            description: 'Тесто дрожжевое, томатный соус, моцарелла, ломтики груши, горгондзола, мёд'
 
         }
     ]
     productList = productList.map((item) => {
         return `<div class="page-pizza-riiska__card">
-                    <div class="page-pizza-riiska__card-title">${item.title}</div>
+                    <div class="page-pizza-riiska__card-title"><strong>${item.title}</strong></div>
                     <div class="page-pizza-riiska__card-img-wrap">
                         <img class="page-pizza-riiska__card-img" src="${item.imgName}" alt="">
                     </div>
@@ -91,10 +91,7 @@ window.addEventListener('DOMContentLoaded', function() {
                     </div>
                     <div class="page-pizza-riiska__card-description-info">
                         <div>
-                            <strong>${item.weight} гр.</strong>
-                        </div>
-                        <div>
-                            </strong><strong>${item.price} руб.</strong>
+                            <strong>${item.weight} гр.</strong> / </strong><strong>${item.price} руб.</strong>
                         </div>
                     </div>
                 </div>`

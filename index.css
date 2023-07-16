@@ -350,7 +350,8 @@ body {
 }
 
 .page-pizza-riiska__location-description-img {
-    height: 320px;
+    width: 360px;
+    margin-top: -12px;
     position: relative;
 }
 
@@ -478,6 +479,7 @@ body {
 .page-pizza-riiska__card-title {
     text-align: center;
     margin: 8px 0;
+    font-size: 24px;
 }
 
 .page-pizza-riiska__card-img {
@@ -486,7 +488,7 @@ body {
 }
 
 .page-pizza-riiska__card-description {
-    margin: 8px 0;
+    margin: 8px;
     min-height: 125px;
 }
 
@@ -504,7 +506,7 @@ body {
 }
 
 .page-pizza-riiska__card-description-info {
-    margin: 8px 0;
+    margin: 8px;
     text-align: right;
 }
 /* mobile */
@@ -538,6 +540,13 @@ body {
     }
     .page {
         min-height: 1000px;
+    }
+    .page-pizza-riiska__card-description {
+        min-height: 50px;
+    }
+
+    .page-pizza-riiska__card-img {
+        width: 270px;
     }
     .header {
         position: sticky;
