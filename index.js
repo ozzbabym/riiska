@@ -48,7 +48,7 @@ window.addEventListener('DOMContentLoaded', function() {
         {
             id: 3,
             title: 'Гавайская',
-            imgName: 'hawaii-pizza.JPG',
+            imgName: 'gavayska.jpeg',
             weight: 410,
             price: 700,
             description: 'Тесто дрожжевое, томатный соус, моцарелла, бекон, куриное филе, ананасы, орегано'
@@ -56,7 +56,7 @@ window.addEventListener('DOMContentLoaded', function() {
         {
             id: 4,
             title: '3 Сыра',
-            imgName: 'cheesethree.jpg',
+            imgName: 'threecheese.jpeg',
             weight: 410,
             price: 600,
             description: 'Тесто дрожжевое, томатный соус, моцарелла, фиор ди латте, горгондзола, орегано'
@@ -64,7 +64,7 @@ window.addEventListener('DOMContentLoaded', function() {
         {
             id: 5,
             title: 'Фунги',
-            imgName: 'fungi-pizza.JPG',
+            imgName: 'funge.jpeg',
             weight: 455,
             price: 600,
             description: 'Тесто дрожжевое, томатный соус, моцарелла, бекон, шампиньоны, черный перец, трюфельное масло, орегано'
