@@ -688,8 +688,14 @@ body {
     .page-main__location-description-map iframe {
         width: 340px;
     }
+    .main-container-pizza-animate {
+        width: 50px;
+    }
+    .main-container-basket-animate {
+        width: 80px;
+    }
     .main-container-pizza-basket {
-        animation: common-animate infinite 5s;
+        animation: common-animate infinite 7s;
     }
     @keyframes common-animate {
         0% {
