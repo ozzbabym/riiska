@@ -38,6 +38,12 @@ body {
     min-height: 1000px;
     border-radius: 35px;
     border: 1px solid #000;
+    position: relative;
+    overflow: hidden;
+}
+
+.pages {
+    margin-top: 80px;
 }
 
 .header {
@@ -47,7 +53,10 @@ body {
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    position: relative;
+    position: sticky;
+    top: 0;
+    right: 0;
+    left: 0;
 }
 
 .header_menu {
@@ -509,6 +518,46 @@ body {
     margin: 8px;
     text-align: right;
 }
+
+.main-container-pizza-basket {
+    position: fixed;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    animation: common-animate infinite 7s;
+    top: 315px;
+}
+
+.main-container-pizza-animate {
+    width: 70px;
+    height: 70px;
+    animation: pizza-animate infinite 1s;
+}
+
+.main-container-basket-animate {
+    margin-left: 10px;
+    width: 100px;
+    height: 100px;
+}
+
+@keyframes common-animate {
+    0% {
+        transform: translateX(-300px);
+    }
+  
+    100% {
+        transform: translateX(2000px);
+    }
+  }
+  @keyframes pizza-animate {
+    0% {
+        transform: rotate(0deg);
+    }
+  
+    100% {
+        transform: rotate(360deg);
+    }
+  }
 /* mobile */
 
 @media screen and (max-width: 900px) {
@@ -549,7 +598,7 @@ body {
         width: 270px;
     }
     .header {
-        position: sticky;
+        position: fixed;
         top: 0;
         left: 0;
         right: 0;
@@ -639,6 +688,27 @@ body {
     .page-main__location-description-map iframe {
         width: 340px;
     }
+    .main-container-pizza-basket {
+        animation: common-animate infinite 5s;
+    }
+    @keyframes common-animate {
+        0% {
+            transform: translateX(-1000px);
+        }
+      
+        100% {
+            transform: translateX(700px);
+        }
+      }
+      @keyframes pizza-animate {
+        0% {
+            transform: rotate(0deg);
+        }
+      
+        100% {
+            transform: rotate(360deg);
+        }
+      }
 }
 /* desktop */
 @media screen and (min-width: 601px) {
