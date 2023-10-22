@@ -438,6 +438,7 @@ body {
     margin-top: 32px;
 }
 
+.news-dialog__title,
 .page-pizza-riiska__location-title-pizza {
     font-family: Arial, Helvetica, sans-serif;
 }
@@ -538,6 +539,41 @@ body {
     margin-left: 10px;
     width: 100px;
     height: 100px;
+}
+
+.news-dialog {
+    position: fixed;
+    visibility: hidden;
+    left: 50%;
+    top: -20%;
+    transform: translate(-50%, -50%);
+    width: 400px;
+    height: 200px;
+    border-radius: 9px;
+    background: #F5BB02;
+    transition: all 3s;
+    z-index: 9999;
+}
+
+.news-dialog--show {
+    visibility: visible;
+    transform: translate(-50%, 230%);
+}
+
+.news-dialog {
+    padding: 16px;
+}
+
+.news-dialog__title-wrap {
+    text-align: center;
+    font-size: 30px;
+}
+
+.news-dialog__description {
+    font-size: 24px;
+    text-align: center;
+    padding-top: 24px;
+    color: #8B0000;
 }
 
 @keyframes common-animate {

@@ -107,5 +107,12 @@ window.addEventListener('DOMContentLoaded', function() {
         pauseOnHover: false,
         rtl: true
       });
+      var newsDialog = $(".js-news-dialog");
+      this.setTimeout(()=>{
+        newsDialog.addClass("news-dialog--show");
+      }, 3000);
+      newsDialog.on("click", function() {
+        newsDialog.remove();
+      })
 });
 
